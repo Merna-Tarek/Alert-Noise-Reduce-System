@@ -1,6 +1,25 @@
+
 # Alert Noise Reducer
 
-A Python project for classifying and reducing noisy alerts in SIEM and security log data. Includes both a Tkinter GUI and a Streamlit dashboard for interactive use.
+A Python AI project for classifying, predicting, and reducing noisy alerts in SIEM and security log data. It uses machine learning models to predict whether an alert is noisy or valid. Includes both a Tkinter GUI and a Streamlit dashboard for interactive use.
+
+## What does it do?
+- Predicts if a security alert is noisy (false positive) or valid (true positive) using a trained AI model.
+- Supports batch prediction from files and single alert prediction.
+- Helps security teams focus on real threats by filtering out noise.
+
+## How does it work?
+- Uses a machine learning classifier (trained on labeled alert data) and a text vectorizer.
+- The model is loaded from `models/noise_classifier.pkl` and the vectorizer from `models/vectorizer.pkl`.
+- You can use the Streamlit dashboard for interactive exploration, or the Tkinter GUI for a classic desktop experience.
+
+## Features
+- Batch alert noise prediction from .txt or .csv files
+- Predicts noisy vs. valid alerts using AI/ML
+- Interactive dashboard with Streamlit
+- Classic desktop GUI with Tkinter
+- Export and filter results
+- Model and vectorizer loading from `models/`
 
 ## Features
 - Batch alert noise prediction from .txt or .csv files
