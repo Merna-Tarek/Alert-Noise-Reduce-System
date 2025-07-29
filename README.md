@@ -21,12 +21,6 @@ A Python AI project for classifying, predicting, and reducing noisy alerts in SI
 - Export and filter results
 - Model and vectorizer loading from `models/`
 
-## Features
-- Batch alert noise prediction from .txt or .csv files
-- Interactive dashboard with Streamlit
-- Classic desktop GUI with Tkinter
-- Export and filter results
-- Model and vectorizer loading from `models/`
 
 ## Quick Start
 
